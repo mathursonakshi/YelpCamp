@@ -22,7 +22,8 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology',true);
-mongoose.connect("mongodb://localhost/yelp_camp");
+//mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb+srv://sonakshi:Abrini123!@cluster0.2uwot.mongodb.net/<dbname>?retryWrites=true&w=majority")
 
 //setting up body parser
 app.use(bodyParser.urlencoded({extended:true}));
