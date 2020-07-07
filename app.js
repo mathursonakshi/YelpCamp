@@ -22,6 +22,7 @@ mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology',true);
+var url = process.env.DATABASEURL || mongodb://localhost/yelp_camp;
 //mongoose.connect("mongodb://localhost/yelp_camp");
 //mongoose.connect("mongodb+srv://sonakshi:Abrini123!@cluster0.2uwot.mongodb.net/<dbname>?retryWrites=true&w=majority");
 mongoose.connect(process.env.DATABASEURL);
